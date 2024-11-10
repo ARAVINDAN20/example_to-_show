@@ -675,3 +675,157 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ---
 
 Rachel HR Interview Bot represents a significant advancement in AI-assisted interview preparation. By combining cutting-edge NLP techniques, GPU acceleration, and a user-friendly interface, Rachel offers a comprehensive solution for candidates looking to excel in technical HR interviews. We hope this tool proves invaluable in your career journey!
+
+
+---
+
+# Advanced Interview Preparation System with NVIDIA AI Stack 🎓
+
+An intelligent interview preparation system powered by NVIDIA's AI technologies, designed to help candidates prepare for technical interviews through adaptive questioning and comprehensive feedback.
+
+## 🌟 Features
+
+- **AI-Powered Interview Simulation**: Leverages NVIDIA's LLama 3.1 Nemotron 70B model for generating context-aware technical questions
+- **Smart Resume Analysis**: Automatically detects candidate's domain and expertise
+- **Real-time Answer Evaluation**: Provides detailed feedback using advanced NLP techniques
+- **Secure Response Generation**: Implements NeMo Guardrails for safe and appropriate content
+- **Optimized Performance**: Uses TensorRT-LLM for efficient inference
+- **Interactive GUI**: Built with Gradio for a seamless user experience
+
+## 🛠️ Technology Stack
+
+### NVIDIA AI Technologies
+- **NVIDIA NeMo Guardrails**: For content safety and response filtering
+- **TensorRT-LLM**: Hardware-accelerated inference optimization
+- **NVIDIA NIM (NVIDIA Inference Microservices)**: Scalable API services
+- **NVIDIA LLama 3.1 Nemotron 70B**: Core language model for question generation and evaluation
+
+### Additional Technologies
+- **Gradio**: Web interface framework
+- **SpaCy & PyTextRank**: Natural Language Processing
+- **scikit-learn**: Machine Learning utilities
+- **OpenAI API**: Integration with NVIDIA's API endpoint
+- **PyPDF2**: PDF processing for resume analysis
+
+## 📋 Prerequisites
+
+```bash
+# Install required Python packages
+pip install nemo-guardrails tensorrt-llm nvidia-nim gradio spacy pytextrank scikit-learn openai
+
+# Download SpaCy language model
+python -m spacy download en_core_web_sm
+```
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/interview-prep-system.git
+cd interview-prep-system
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Set up your NVIDIA API key:
+```python
+api_key = "your-nvidia-api-key"
+```
+
+4. Run the application:
+```bash
+python Rachel.py
+```
+
+## 💡 System Architecture
+
+### Core Components
+
+1. **InterviewPrepSystem Class**
+   - Handles core interview preparation logic
+   - Integrates NVIDIA AI technologies
+   - Manages secure response generation
+   - Implements answer evaluation algorithms
+
+2. **InterviewPrepGUI Class**
+   - Provides interactive web interface
+   - Manages user interactions
+   - Handles file uploads and processing
+   - Displays real-time feedback
+
+### Key Features Implementation
+
+#### Resume Analysis
+- PDF parsing and text extraction
+- Domain detection using NLP
+- Skill identification and categorization
+
+#### Question Generation
+- Context-aware technical question generation
+- Domain-specific adaptation
+- Quality assurance through NeMo Guardrails
+
+#### Answer Evaluation
+- Keyword extraction using TextRank
+- Semantic similarity analysis
+- Comprehensive feedback generation
+- Score calculation based on multiple parameters
+
+## 🔒 Security Features
+
+- Content filtering through NeMo Guardrails
+- Secure API communication
+- Input validation and sanitization
+- Professional response maintenance
+
+## 🎯 Use Cases
+
+1. **Technical Interview Preparation**
+   - Practice domain-specific questions
+   - Receive instant feedback
+   - Track improvement over time
+
+2. **HR Professional Tools**
+   - Generate relevant technical questions
+   - Evaluate candidate responses
+   - Maintain consistent interview standards
+
+3. **Self-Assessment**
+   - Identify knowledge gaps
+   - Practice with real-world scenarios
+   - Get improvement suggestions
+
+## 📊 Performance Optimization
+
+- TensorRT-LLM integration for faster inference
+- Optimized NLP processing pipeline
+- Efficient memory management
+- Scalable microservices architecture
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- NVIDIA for providing the AI technology stack
+- Contributors and maintainers of the open-source libraries used
+- Community feedback and support
+
+## 📧 Contact
+
+Your Name - [your.email@example.com]
+Project Link: [https://github.com/yourusername/interview-prep-system]
